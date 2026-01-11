@@ -38,10 +38,10 @@ Log-Structured Merge Tree basics (MemTable + SSTable).
 ## System Design Guide
 We included a [cheat sheet](./docs/SYSTEM_DESIGN.md) for choosing the right pattern in interviews.
 
-## Installation
+### Installation
 
 ```bash
-npm install backend-design-patterns
+npm install @yurtzy/backend-design-patterns
 ```
 
 ## Try it Live
