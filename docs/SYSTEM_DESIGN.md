@@ -24,10 +24,10 @@ When to use **Consistent Hashing** vs **Modulo Hashing**?
 
 ```mermaid
 graph TD
-    A[Add/Remove Cache Node] -->|Modulo Hashing| B[Almost ALL keys remapped]
-    A -->|Consistent Hashing| C[Only K/N keys remapped]
-    B --> D[Cache Stampede (DB Overload)]
-    C --> E[Minimal Impact]
+    A["Add/Remove Cache Node"] -->|Modulo Hashing| B["Almost ALL keys remapped"]
+    A -->|Consistent Hashing| C["Only K/N keys remapped"]
+    B --> D["Cache Stampede (DB Overload)"]
+    C --> E["Minimal Impact"]
 ```
 
 **Rule of Thumb**: If your node count changes (auto-scaling, failures), ALWAYS use Consistent Hashing.
