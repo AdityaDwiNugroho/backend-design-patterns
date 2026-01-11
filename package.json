@@ -1,12 +1,32 @@
 {
   "name": "backend-design-patterns",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "High-performance Distributed System Patterns (Consistent Hashing, Token Bucket, LSM Tree) with zero dependencies.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "author": "AdityaDwiNugroho",
+  "license": "MIT",
+  "homepage": "https://github.com/AdityaDwiNugroho/backend-design-patterns#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdityaDwiNugroho/backend-design-patterns.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AdityaDwiNugroho/backend-design-patterns/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "npx tsc",
@@ -17,10 +37,17 @@
     "lint": "eslint src/**/*.ts",
     "format": "prettier --write src/**/*.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "keywords": [
+    "backend",
+    "system-design",
+    "distributed-systems",
+    "consistent-hashing",
+    "rate-limiter",
+    "circuit-breaker",
+    "lsm-tree",
+    "bloom-filter",
+    "typescript"
+  ],
   "devDependencies": {
     "typescript": "^5.9.3",
     "tsx": "^4.7.0"
