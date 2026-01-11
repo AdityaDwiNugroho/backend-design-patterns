@@ -6,7 +6,7 @@
   "scripts": {
     "test": "vitest run",
     "benchmark": "tsx benchmarks/run.ts",
-    "demo": "tsx examples/server-simulation.ts",
+    "demo": "npx tsx examples/server-simulation.ts",
     "lint": "eslint src/**/*.ts",
     "format": "prettier --write src/**/*.ts"
   },
