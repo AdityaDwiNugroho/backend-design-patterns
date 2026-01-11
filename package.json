@@ -1,5 +1,5 @@
 {
-  "name": "backend-design-patterns",
+  "name": "@yurtzy/backend-design-patterns",
   "version": "1.0.1",
   "description": "High-performance Distributed System Patterns (Consistent Hashing, Token Bucket, LSM Tree) with zero dependencies.",
   "main": "dist/index.js",
