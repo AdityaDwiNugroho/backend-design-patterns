@@ -30,6 +30,14 @@ Probabilistic data structure for space-efficient set membership.
 - **Complexity**: O(k) for add/check (k = hash count).
 - **Use Case**: Caches (filtering non-existent keys), Web Crawlers (visited URLs).
 
+### [LSM Tree](./src/lsm-tree)
+Log-Structured Merge Tree basics (MemTable + SSTable).
+- **Complexity**: O(log N) write, O(read_amplification) read.
+- **Use Case**: Write-heavy databases (Cassandra, RocksDB).
+
+## System Design Guide
+We included a [cheat sheet](./docs/SYSTEM_DESIGN.md) for choosing the right pattern in interviews.
+
 ## Installation
 
 ```bash
@@ -97,6 +105,7 @@ Core patterns are optimized for high-throughput environments.
 | **Token Bucket** | `tryConsume` | **25,000,000+** |
 | **Consistent Hashing** | `getNode` | **3,000,000+** |
 | **Bloom Filter** | `mightContain` | **15,000,000+** |
+| **LSM Tree** | `put` (MemTable) | **500,000+** |
 
 *Measured on standard i7 equivalent hardware using `npm run benchmark`.*
 
