@@ -2,8 +2,15 @@
   "name": "backend-design-patterns",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
+    "build": "npx tsc",
+    "prepublishOnly": "npm run build",
     "test": "vitest run",
     "benchmark": "tsx benchmarks/run.ts",
     "demo": "npx tsx examples/server-simulation.ts",
